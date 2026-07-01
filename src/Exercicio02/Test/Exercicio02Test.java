@@ -1,9 +1,8 @@
 package Exercicio02.Test;
 
-//Faça um algoritmo para receber um número qualquer e imprimir na tela se o número é par ou ímpar, positivo ou negativo.
+//2 - Faça um algoritmo para receber um número qualquer e imprimir na tela se o número é par ou ímpar, positivo ou negativo.
 
 import Exercicio02.Main.Exercicio02;
-
 import java.util.Scanner;
 
 public class Exercicio02Test {
