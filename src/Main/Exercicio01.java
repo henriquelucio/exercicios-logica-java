@@ -7,16 +7,19 @@ public class Exercicio01 {
     private int valueB;
     private int valueC;
 
-    private int somaValueAWithValueB(int valueA, int valueB){
-        return valueA + valueB;
+    private int sumValueAWithValueB(){
+        return this.valueA + this.valueB;
     }
 
     public void printer(){
-        System.out.println("The sum of value A: " + valueA + " and value B: " + valueB + " is " + somaValueAWithValueB(valueA, valueB));
-        if(somaValueAWithValueB(valueA, valueB) > valueC){
-            System.out.println("The sum is greater than Value C: " + valueC);
+        int sum = sumValueAWithValueB();
+        System.out.println("The sum of value A: " + this.valueA + " and value B: " + this.valueB + " is " + sum);
+        if(sum < this.valueC){
+            System.out.println("The sum is smaller than Value C: " + this.valueC);
+        }else if(sum > this.valueC){
+            System.out.println("The sum is greater than Value C: " + this.valueC);
         }else{
-            System.out.println("The sum is smaller than Value C: " + valueC);
+            System.out.println("The sum is equal to Value C: " + this.valueC);
         }
     }
 
