@@ -1,6 +1,6 @@
-package Test;
+package Exercicio01.Test;
 
-import Main.Exercicio01;
+import Exercicio01.Main.Exercicio01;
 
 public class Exercicio01Test {
     public static void main(String[] args){

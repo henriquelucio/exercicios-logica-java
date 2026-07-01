@@ -1,0 +1,18 @@
+package Exercicio02.Main;
+
+//Faça um algoritmo para receber um número qualquer e imprimir na tela se o número é par ou ímpar, positivo ou negativo.
+
+public class Exercicio02 {
+    private int moduleOperator(int number){
+        return number % 2;
+    }
+
+    public void printer(int number){
+        int result = moduleOperator(number);
+        if(result == 0){
+            System.out.println("The number " + number + " is even");
+        }else{
+            System.out.println("The number " + number + " is odd");
+        }
+    }
+}
