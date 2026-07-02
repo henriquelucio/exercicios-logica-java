@@ -10,7 +10,7 @@ public class Exercicio02Test {
         Scanner input = new Scanner(System.in);
         Exercicio02 exercicio02 = new Exercicio02();
 
-        System.out.println("Informe um numero inteiro, positivo ou negativo, e o sistema ira verificar se ele é par ou impar");
+        System.out.println("Provide a integer number, the program will return if it is positive or negative, odd or even");
         int number = input.nextInt();
 
         exercicio02.printer(number);
