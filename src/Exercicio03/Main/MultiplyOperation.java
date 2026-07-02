@@ -5,4 +5,9 @@ public class MultiplyOperation implements MathOperation{
     public int executeOperation(int valueA, int valueB) {
         return valueA * valueB;
     }
+
+    @Override
+    public String getDescription() {
+        return "Multiply";
+    }
 }

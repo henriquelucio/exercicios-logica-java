@@ -5,32 +5,18 @@ package Exercicio03.Main;
 public class Exercicio03{
     private int valueA;
     private int valueB;
+    private MathOperation operation;
 
-    private int mathOperator(){
-        MathOperation operation;
-        if(valueA == valueB){
-            operation = new SumOperation();
-            return operation.executeOperation(valueA, valueB);
-        }else{
-            operation = new MultiplyOperation();
-            return operation.executeOperation(valueA, valueB);
-        }
+    public Exercicio03(int valueA, int valueB, MathOperation operation){
+        this.valueA = valueA;
+        this.valueB = valueB;
+        this.operation = operation;
+
+        printer();
     }
 
     public void printer(){
-        int result = mathOperator();
-        if(valueA == valueB){
-            System.out.println("The numbers are equal, the sum math operation result is: " + result);
-        }else{
-            System.out.println("The numbers are different, the multiplier math operation result is: " + result);
-        }
-    }
-
-    public void setValueA(int valueA){
-        this.valueA = valueA;
-    }
-
-    public void setValueB(int valueB){
-        this.valueB = valueB;
+        int result = operation.executeOperation(valueA, valueB);
+        System.out.println("The " + operation.getDescription() + " operation result is: " + result);
     }
 }

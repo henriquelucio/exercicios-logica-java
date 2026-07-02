@@ -5,4 +5,9 @@ public class SumOperation implements MathOperation{
     public int executeOperation(int valueA, int valueB) {
         return valueA + valueB;
     }
+
+    @Override
+    public String getDescription() {
+        return "Sum";
+    }
 }
