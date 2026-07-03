@@ -11,8 +11,6 @@ public class Exercicio03{
         this.valueA = valueA;
         this.valueB = valueB;
         this.operation = operation;
-
-        printer();
     }
 
     public void printer(){

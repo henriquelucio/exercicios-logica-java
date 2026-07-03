@@ -5,13 +5,13 @@ package Exercicio03.Test;
 import Exercicio03.Main.Exercicio03;
 import Exercicio03.Main.MultiplyOperation;
 import Exercicio03.Main.SumOperation;
-import Exercicio03.Main.MathOperation;
 
 import java.util.Scanner;
 
 public class Exercicio03Test {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+        Exercicio03 exercicio03;
 
         System.out.println("Provide two integer numbers");
         System.out.println("If equal, the program will sum the values and return the final result");
@@ -23,9 +23,11 @@ public class Exercicio03Test {
         int valueB = input.nextInt();
 
         if(valueA == valueB){
-            Exercicio03 exercicio03 = new Exercicio03(valueA, valueB, new SumOperation());
+            exercicio03 = new Exercicio03(valueA, valueB, new SumOperation());
         }else{
-            Exercicio03 exercicio03 = new Exercicio03(valueA, valueB, new MultiplyOperation());
+            exercicio03 = new Exercicio03(valueA, valueB, new MultiplyOperation());
         }
+
+        exercicio03.printer();
     }
 }
