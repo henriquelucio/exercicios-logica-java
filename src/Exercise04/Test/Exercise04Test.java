@@ -6,7 +6,7 @@ import Exercise04.Main.Exercise04;
 
 import java.util.Scanner;
 
-public class ExerciseTest04 {
+public class Exercise04Test {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         Exercise04 exercise04;
