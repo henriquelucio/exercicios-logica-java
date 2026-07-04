@@ -9,14 +9,11 @@ import java.util.Scanner;
 public class Exercise04Test {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        Exercise04 exercise04;
 
         System.out.println("Provide a number and the program will return the previous and following number");
         System.out.println("Type an integer number:");
         int tempNumber = input.nextInt();
 
-        exercise04 = new Exercise04(tempNumber);
-
-        exercise04.printer();
+        Exercise04.print(tempNumber);
     }
 }
