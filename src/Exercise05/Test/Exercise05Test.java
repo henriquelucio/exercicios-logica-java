@@ -4,20 +4,30 @@ package Exercise05.Test;
 
 import Exercise05.Main.Exercise05;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Exercise05Test {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        Exercise05 exercise05;
 
         System.out.println("Provide the minimum salary and your salary, the program will calculate how much times of minimum salary you receive");
         System.out.println("Provide the minimum salary:");
-        double minimumSalary = input.nextDouble();
+        BigDecimal minimumSalary = input.nextBigDecimal();
         System.out.println("Provide your salary:");
-        double employeeSalary = input.nextDouble();
+        BigDecimal employeeSalary = input.nextBigDecimal();
 
-        exercise05 = new Exercise05(minimumSalary, employeeSalary);
-        exercise05.printer();
+        Exercise05.print(minimumSalary, employeeSalary);
+        System.out.println(new BigDecimal("2.374").setScale(2, RoundingMode.HALF_EVEN));
+        System.out.println(new BigDecimal("2.364").setScale(2, RoundingMode.HALF_EVEN));
+        System.out.println(new BigDecimal("2.354").setScale(2, RoundingMode.HALF_EVEN));
+        System.out.println(new BigDecimal("2.344").setScale(2, RoundingMode.HALF_EVEN));
+        System.out.println(new BigDecimal("2.334").setScale(2, RoundingMode.HALF_EVEN));
+        System.out.println(new BigDecimal("2.324").setScale(2, RoundingMode.HALF_EVEN));
+        System.out.println(new BigDecimal("2.314").setScale(2, RoundingMode.HALF_EVEN));
+        //1,29487970388649 - 2099/1621
+        //1,295496607032696 - 2100/1621
+        //1,296113510178902 - 2101/1621
     }
 }
