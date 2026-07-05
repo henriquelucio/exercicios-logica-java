@@ -19,15 +19,5 @@ public class Exercise05Test {
         BigDecimal employeeSalary = input.nextBigDecimal();
 
         Exercise05.print(minimumSalary, employeeSalary);
-        System.out.println(new BigDecimal("2.374").setScale(2, RoundingMode.HALF_EVEN));
-        System.out.println(new BigDecimal("2.364").setScale(2, RoundingMode.HALF_EVEN));
-        System.out.println(new BigDecimal("2.354").setScale(2, RoundingMode.HALF_EVEN));
-        System.out.println(new BigDecimal("2.344").setScale(2, RoundingMode.HALF_EVEN));
-        System.out.println(new BigDecimal("2.334").setScale(2, RoundingMode.HALF_EVEN));
-        System.out.println(new BigDecimal("2.324").setScale(2, RoundingMode.HALF_EVEN));
-        System.out.println(new BigDecimal("2.314").setScale(2, RoundingMode.HALF_EVEN));
-        //1,29487970388649 - 2099/1621
-        //1,295496607032696 - 2100/1621
-        //1,296113510178902 - 2101/1621
     }
 }
