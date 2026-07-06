@@ -1,8 +1,11 @@
 package Exercise06.Main;
 
+import java.math.BigDecimal;
+
 public class Calculator {
 
-    public static double calculator(double value){
-        return value*1.05;
+    public static BigDecimal calculateAdjustment(double value){
+        BigDecimal stringValue = new BigDecimal(String.valueOf(value));
+        return stringValue.multiply(new BigDecimal("1.05"));
     }
 }
