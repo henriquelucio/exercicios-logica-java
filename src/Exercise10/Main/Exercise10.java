@@ -7,9 +7,9 @@ import java.math.RoundingMode;
 
 public class Exercise10 {
 
-    public void print(double[] grades){
+    public static void print(double[] grades){
         System.out.println("The average grade is:");
-        BigDecimal roundingResult = new BigDecimal(AverageCalculator.averageGrade(grades)).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal roundingResult = new BigDecimal(String.valueOf(AverageCalculator.averageGrade(grades))).setScale(2, RoundingMode.HALF_UP);
         System.out.println(roundingResult);
     }
 }
